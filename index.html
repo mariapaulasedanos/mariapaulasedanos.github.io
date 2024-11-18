@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cumpleaños7dediciembre</title>
+    <link rel="stylesheet" href="pagina cumpleaños\style.css">
+</head>
+<body>
+    
+    <header class="header">
+
+        <div  class="menu container">
+            <label for ="menu">
+                <img src=""  claass="menu-icono" alt="menu">
+            </label>
+
+        
+        </div>
+
+        <div class="header-content container">
+            <div class="header-txt">
+                <h1>FELIZ CUMPLEAÑOS <span>STEFANÍA VALENCIA PADILLA</span> <br> FELICES 29 FLACA </h1>
+                <P>
+                    Espero que disfrutes tu día al máximo, te deseo mucha tranquilidad y felicidad.
+                    Quería hacerte algo diferente, ya que estoy a la distancia fisica y emocionalmente. 
+                    Sin embargo, ¡este día no deja de ser importante para mi! Feliz vuelta al sol pequeño saltamontes🩵
+                </P>
+                <div class="butons">
+                    <h4>Para ti, espero que te guste</h4>
+
+                    <a href="https://open.spotify.com/track/4i2Uelkm3Fy2CSE63s4hSz?si=YIvUskhmQ0m91aOX1RZBCw" class="btn-1">Escúchala solo da click aquí</a>
+                    
+                </div>
+
+            </div>
+        </div>
+           
+    </header>
+
+    <main class="regalos cumpleaños container">
+        <h2>MOMENTO DE SELECCIÓN</h2>
+        
+        <div class="regalos-content">
+            <div class="regalos-1">
+                <img src="regalo.jpg" alt="">
+                <div class="regalos-txt">
+                    <P>
+                        A continuación tienes 5 opciones, dale click a la que más te guste y sabrás que regalo obtendrás
+                    </P>
+                </div>
+            </div>
+        </div>
+
+
+
+    </main>
+
+    
+    
+    <style>
+        body,html{
+            height: 100%;
+            margin: 0;
+            overflow-x: hidden;
+        }
+        
+        body, .parallax {
+            height: 100%;
+            background-image: url('collage.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            perspective: 1px;
+            transform-style: preserve-3d; 
+        }
+
+        .parallax-content {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            color: white;
+            text-align: center;
+        }
+    </style>
+    <style>
+        body {
+        margin: 0;
+        padding: 0;
+        display: inline;
+        justify-content: center;
+        align-items: center;
+        .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 50px;
+        gap: 20px;
+        }
+        .card {
+            display: inline-block;
+            width: 250px;
+            height: 250px;
+            perspective: 1000px;
+            margin: 20px;
+            border: 2px solid #000; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+            border-radius: 15px; 
+            
+        }
+        .inner-card {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.6s ease-in-out;
+            transform-style: preserve-3d;
+        }
+        .card:hover .inner-card {
+            transform: rotateY(180deg);
+        }
+        .front, .back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 15px;
+            background-size: cover;
+            background-position: center;
+        }
+        .front {
+            background-color: #f0f0f0;
+        }
+        .back {
+            background-color: #e0e0e0;
+            transform: rotateY(180deg);
+        }
+        }
+    </style>
+             <div class="card">
+                <div class="inner-card">
+                    <div class="front" style="background-image: url('OPCIÓN\ 1.jpg')"></div>
+                    <div class="back" style="background-image: url('estopa\ tickets.jpeg')"></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="inner-card">
+                    <div class="front" style="background-image: url('opcion\ 2.png')"></div>
+                    <div class="back" style="background-image: url('ring.jpeg')"></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="inner-card">
+                    <div class="front" style="background-image: url('opción\ 3.jpg')"></div>
+                    <div class="back" style="background-image: url('plato.jpg')"></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="inner-card">
+                    <div class="front" style="background-image: url('opcion\ 4.jpg')"></div>
+                    <div class="back" style="background-image: url('cuarteto\ de\ nos.jpg')"></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="inner-card">
+                    <div class="front" style="background-image: url('opción\ 3.jpg')"></div>
+                    <div class="back" style="background-image: url('plato.jpg')"></div>
+                </div>
+            </div>
+        </div>
+
+        <section class="respuesta container">
+            <div class="respuesta-content">
+                <h3>Escribe qué regalo que seleccionaste</h3>
+                <form action="enviar_correo.php" method="post">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+            
+                    <label for="opinion">Los regalos ganadores:</label>
+                    <textarea id="opinion" name="opinion" rows="4" cols="50" required></textarea><br><br>
+            
+                    <input type="submit" class="btn-2" value="Enviar">
+                </form>
+            </div>
+        </section>  
+</body>
+</html>

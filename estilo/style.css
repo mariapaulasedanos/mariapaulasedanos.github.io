@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+body{
+    font-family: "Oswald", sans-serif;
+    background-color:teal;
+    
+}
+
+img {
+    max-width: 100%;
+
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+.logo {
+    color: snow;
+    font-size: 25px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;    
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    display: block;
+}
+
+.menu .navbar ul li a:hover {
+    color: aquamarine;
+
+}
+
+#menu {
+    display: none;
+    
+}
+
+.menu-icono {
+    width: 25;
+
+}
+
+.menu label {
+
+    cursor: pointer;
+    display: none;
+
+}
+
+.header-content {
+    display: flex;
+}
+
+.header-txt {
+    flex-basis: 100%;
+}
+
+.header-txt h1{
+    font-size: 60px;
+    color: darkgoldenrod;
+    background-color: rgba(166, 161, 161, 0.478);
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 25px;
+    text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+}
+
+.header-txt span{
+    color: rgb(220, 245, 233);
+
+}
+
+.header-txt p{
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(166, 161, 161, 0.478);
+
+}
+
+.butons {
+    display: flex;
+
+}
+
+.btn-1{
+    display: inline-block;
+    padding: 11px;
+    border: 2px solid beige;
+    border-radius: 25px;
+    font-size: 25px;
+    background-color: rgba(169, 150, 40, 0.534);
+    color: black;
+    text-align: center;
+
+}
+
+.btn-1:hover {
+    background-color: rgb(22, 170, 145);
+    
+}
+
+.header-txt h4{
+    font-size: 25px;
+    color: darkgoldenrod;
+    background-color: rgb(166, 161, 161, 0.478);
+    text-align: center;
+    text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+}
+
+
+.main {
+    padding: 100px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 35px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(166, 161, 161, 0.478);
+    text-align: center;   
+}
+
+.regalos-txt p{
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(166, 161, 161, 0.478);
+}
+
+.respuesta {
+    background-color: rgb(166, 161, 161, 0.478);
+    font-size: 20px;
+    text-align: center;
+
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+input {
+    padding: auto;
+    background-color: rgba(184, 135, 11, 0.437);
+    border: 0;
+    border-radius: 25px;
+    color: black;
+    font-size: 20px;
+}
+
+.btn-2 {
+    background-color: aliceblue;
+    border: 2px solid rgb(0, 0, 0);
+    cursor: pointer;
+
+}
+
+.btn-2:hover {
+    background-color: rgb(22, 170, 145);
+}
+
+@media(max-width:991px) {
+    .menu {
+        padding: 20px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+
+
+ 
+    }
+    #menu:checked  ~ .navbar{
+        display: initial;
+    }
+
+    .contact {
+        padding: 30px;
+    }
+
+    .form {
+        flex-direction: column;
+    }
+
+    .input {
+        margin: 0 0 20px 0;
+    }
+    
+    
+
+
+}
